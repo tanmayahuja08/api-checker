@@ -11,6 +11,13 @@ Static, client-side-only API checker UI.
 - API requests are made directly from the browser to the API Base URL entered in the page.
 - API keys are not saved by the app; they stay in the current page input.
 
+## UI Flow
+
+- Step 1: enter API key, Base URL, model, and compatibility mode.
+- Step 2: unlocks only after Step 1 connects, then runs a normal text chat check.
+- Step 3: unlocks only after Step 2 gets a successful text response, then runs specialized tests: a) vision, b) image generation, c) tool calling.
+- The same step order is used on desktop and mobile.
+
 ## Deploy To Netlify
 
 1. Create a new Netlify site from this folder.
